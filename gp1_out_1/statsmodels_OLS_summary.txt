@@ -1,0 +1,48 @@
+                             OLS Regression Results                            
+===============================================================================
+Dep. Variable:     log_num_seats_total   R-squared:                       0.136
+Model:                             OLS   Adj. R-squared:                  0.136
+Method:                  Least Squares   F-statistic:                     1725.
+Date:                 Thu, 18 Sep 2025   Prob (F-statistic):               0.00
+Time:                         12:17:23   Log-Likelihood:            -1.1865e+05
+No. Observations:               209697   AIC:                         2.373e+05
+Df Residuals:                   209674   BIC:                         2.376e+05
+Df Model:                           22                                         
+Covariance Type:                   HC3                                         
+==================================================================================================
+                                     coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                         -0.0372      0.024     -1.518      0.129      -0.085       0.011
+C(Customer_Cat)[T.B]               1.7727      0.022     79.213      0.000       1.729       1.817
+C(Train_Number_All)[T.B]           0.1027      0.005     19.840      0.000       0.093       0.113
+C(Train_Number_All)[T.C]           0.0527      0.006      9.548      0.000       0.042       0.064
+C(Train_Number_All)[T.D]          -0.0043      0.006     -0.786      0.432      -0.015       0.006
+C(Train_Number_All)[T.E]           0.1311      0.005     28.118      0.000       0.122       0.140
+C(Train_Number_All)[T.F]           0.0865      0.005     17.855      0.000       0.077       0.096
+C(Train_Number_All)[T.G]           0.0733      0.005     14.078      0.000       0.063       0.084
+C(Train_Number_All)[T.H]           0.0899      0.005     18.578      0.000       0.080       0.099
+C(Train_Number_All)[T.I]           0.0211      0.005      3.984      0.000       0.011       0.031
+C(Train_Number_All)[T.J]           0.0116      0.005      2.307      0.021       0.002       0.021
+C(Train_Number_All)[T.K]          -0.0369      0.006     -6.027      0.000      -0.049      -0.025
+C(Train_Number_All)[T.L]           0.0014      0.006      0.233      0.816      -0.010       0.013
+C(Train_Number_All)[T.M]          -0.0697      0.005    -13.244      0.000      -0.080      -0.059
+C(Train_Number_All)[T.N]          -0.1232      0.006    -19.580      0.000      -0.135      -0.111
+C(Train_Number_All)[T.O]          -0.2124    980.773     -0.000      1.000   -1922.492    1922.067
+log_price                          0.1461      0.004     35.063      0.000       0.138       0.154
+log_price:C(Customer_Cat)[T.B]    -0.2771      0.004    -68.917      0.000      -0.285      -0.269
+days_to_departure                  0.0005   5.34e-05      9.033      0.000       0.000       0.001
+I(days_to_departure ** 2)       2.697e-07   2.05e-07      1.316      0.188   -1.32e-07    6.71e-07
+isNormCabin                       -0.0012      0.003     -0.419      0.675      -0.007       0.004
+isReturn                           0.0148      0.003      4.887      0.000       0.009       0.021
+isOneway                          -0.0578      0.003    -20.117      0.000      -0.063      -0.052
+==============================================================================
+Omnibus:                    27170.701   Durbin-Watson:                   1.751
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            39806.120
+Skew:                           0.974   Prob(JB):                         0.00
+Kurtosis:                       3.874   Cond. No.                     8.08e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+[2] The condition number is large, 8.08e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.

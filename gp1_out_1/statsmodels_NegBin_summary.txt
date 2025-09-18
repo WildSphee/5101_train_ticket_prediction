@@ -1,0 +1,38 @@
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:        num_seats_total   No. Observations:               209697
+Model:                            GLM   Df Residuals:                   209674
+Model Family:        NegativeBinomial   Df Model:                           22
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:            -4.2485e+05
+Date:                Thu, 18 Sep 2025   Deviance:                       61415.
+Time:                        12:17:23   Pearson chi2:                 9.13e+04
+No. Iterations:                     7   Pseudo R-squ. (CS):            0.05401
+Covariance Type:            nonrobust                                         
+==================================================================================================
+                                     coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------
+Intercept                         -1.5295      0.095    -16.073      0.000      -1.716      -1.343
+C(Customer_Cat)[T.B]               3.2576      0.091     35.608      0.000       3.078       3.437
+C(Train_Number_All)[T.B]           0.1767      0.015     11.865      0.000       0.148       0.206
+C(Train_Number_All)[T.C]           0.0992      0.017      5.970      0.000       0.067       0.132
+C(Train_Number_All)[T.D]          -0.0159      0.017     -0.947      0.344      -0.049       0.017
+C(Train_Number_All)[T.E]           0.2251      0.013     16.862      0.000       0.199       0.251
+C(Train_Number_All)[T.F]           0.1439      0.014     10.123      0.000       0.116       0.172
+C(Train_Number_All)[T.G]           0.1240      0.015      8.158      0.000       0.094       0.154
+C(Train_Number_All)[T.H]           0.1467      0.014     10.413      0.000       0.119       0.174
+C(Train_Number_All)[T.I]           0.0229      0.016      1.445      0.149      -0.008       0.054
+C(Train_Number_All)[T.J]           0.0146      0.015      0.940      0.347      -0.016       0.045
+C(Train_Number_All)[T.K]          -0.0792      0.020     -3.996      0.000      -0.118      -0.040
+C(Train_Number_All)[T.L]          -0.0124      0.020     -0.624      0.533      -0.052       0.027
+C(Train_Number_All)[T.M]          -0.1274      0.017     -7.512      0.000      -0.161      -0.094
+C(Train_Number_All)[T.N]          -0.2954      0.030     -9.841      0.000      -0.354      -0.237
+C(Train_Number_All)[T.O]          -0.5711      1.414     -0.404      0.686      -3.343       2.201
+log_price                          0.3196      0.016     19.843      0.000       0.288       0.351
+log_price:C(Customer_Cat)[T.B]    -0.5033      0.016    -31.642      0.000      -0.534      -0.472
+days_to_departure                  0.0008      0.000      5.490      0.000       0.000       0.001
+I(days_to_departure ** 2)       2.936e-07   5.21e-07      0.564      0.573   -7.27e-07    1.31e-06
+isNormCabin                        0.0054      0.008      0.690      0.490      -0.010       0.021
+isReturn                           0.0275      0.009      3.225      0.001       0.011       0.044
+isOneway                          -0.1086      0.008    -13.058      0.000      -0.125      -0.092
+==================================================================================================
